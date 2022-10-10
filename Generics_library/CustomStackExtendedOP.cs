@@ -16,10 +16,10 @@ namespace Generics_library
         }
         public void StackTestJedi()
         {
-            CustomStack<IIntern> stack = new CustomStack<Jedi>();
+            CustomStack<IIntern> stack = new CustomStack<IIntern>();
             stack.Push(new Jedi(name: "Manish", id: 0));
             stack.Push(new Jedi(name: "Tika", id: 1));
-            stack.Push(new SkillsLab(name: "Washeem", id: 2));
+            
 
             DisplayAllInternsNameAndId(stack);
         }
